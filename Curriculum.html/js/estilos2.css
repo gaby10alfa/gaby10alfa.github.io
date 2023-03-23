@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+
+  .body,p,li {
+    margin: 10;
+     font-family:" Lucida Handwriting",Brush Script MT, cursive ;
+    color:black
+  }
+
+
+  /* Estilo de encabezado */
+  .header {
+    background-color:rgb(250, 215, 215);
+    padding: 20px;
+    text-align: center;
+    border: 5px solid rgb(77, 41, 41);
+    
+  }
+  button {
+    background-color: rgb(241, 212, 212);
+    color: #3b413d;
+    border-radius:12px ;
+  }
+  
+  /* Crea tres columnas  que flotan una al lado de la otra */
+  .column {
+    background-color: rgb(216, 199, 241);
+    float: left;
+    width: 33.33%;
+    height: 500px;
+    padding: 15px;
+  }
+  
+  
+  /* Borra flotadores después de las columnas */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    <i class="fa-sharp fa-solid fa-car-side"></i> 
+  }
+  /* Crea tres columnas desiguales que flotan una al lado de la otra */
+  .column {
+    float: left;
+    padding: 10px;
+    border: 10px solid rgb(143, 143, 182);
+  }
+  
+  /* Columnas derecha e izquierda */
+  .column.side {
+    width: 25%;
+    
+  }
+  
+  /* Columna central */
+  .column.middle {
+    width: 50%;
+  }
+  
+  
+  
+  /* Responsive layout -las tres columnas se apilen encima de cada una
+   en lugar de una al lado de la otra */
+  @media screen  (max-width:600px) {
+    .column, 
+     {
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* Estilo de pie  */
+  .footer {
+    background-color: #d0e2d6;
+    padding: 10px;
+    text-align: center ;
+    border: 8px solid rgb(15, 15, 14);
+  }
+  
+  img {
+    position: absolute;
+    left: 45px;
+   top: 50px;
+    z-index: 5;
+    border-radius: 50%;
+  }
+  /* Estilo de barra de navegación */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+    }
+  
+  /* Estilo de links de navegación*/
+  .topnav a {
+    float: medium;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Cambiar color al pasar el mouse */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } 
